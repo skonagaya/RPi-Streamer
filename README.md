@@ -46,6 +46,13 @@ Run the following command:
 $ curl -sSL get.docker.com | sh
 ```
 
+Make sure you're logged in as has enough access to run docker. Below is a command that adds user _pi_ to the docker group:
+
+```
+sudo usermod -aG docker pi
+```
+
+Logout and log back into the device to have the command above take effect.
 
 ### Prepare RTP/RTMP/RTSP Client
 

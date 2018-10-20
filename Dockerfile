@@ -1,4 +1,4 @@
-FROM resin/rpi-raspbian:latest  
+FROM resin/rpi-raspbian:stretch
 ENTRYPOINT []
 
 
@@ -52,10 +52,10 @@ RUN	mkdir -p /root/run/rec && \
 ####################################
 
 RUN curl -OL \
-  https://github.com/iizukanao/picam/releases/download/v1.4.6/picam-1.4.6-binary.tar.xz && \
-  tar xvf picam-1.4.6-binary.tar.xz && \ 
-  rm picam-1.4.6-binary.tar.xz && \
-  cp picam-1.4.6-binary/picam ~/picam/
+  https://github.com/iizukanao/picam/releases/download/v1.4.6/picam-1.4.6-binary-stretch.tar.xz && \
+  tar xvf picam-1.4.6-binary-stretch.tar.xz && \ 
+  rm picam-1.4.6-binary-stretch.tar.xz && \
+  cp picam-1.4.6-binary-stretch/picam ~/picam/
 
 
 ########################################

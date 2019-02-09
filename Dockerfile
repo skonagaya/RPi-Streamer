@@ -26,9 +26,9 @@ WORKDIR /root/
 ############################
 
 RUN curl -O \  
-  https://nodejs.org/dist/v4.5.0/node-v4.5.0-linux-armv6l.tar.gz && \
-  tar -xvf node-v4.5.0-linux-armv6l.tar.gz -C /usr/local --strip-components=1 && \
-  rm node-v4.5.0-linux-armv6l.tar.gz
+  https://nodejs.org/dist/v4.9.1/node-v4.9.1-linux-armv6l.tar.gz && \
+  tar -xvf node-v4.9.1-linux-armv6l.tar.gz -C /usr/local --strip-components=1 && \
+  rm node-v4.9.1-linux-armv6l.tar.gz
 
 
 ########################################
@@ -52,10 +52,10 @@ RUN	mkdir -p /root/run/rec && \
 ####################################
 
 RUN curl -OL \
-  https://github.com/iizukanao/picam/releases/download/v1.4.6/picam-1.4.6-binary-stretch.tar.xz && \
-  tar xvf picam-1.4.6-binary-stretch.tar.xz && \ 
-  rm picam-1.4.6-binary-stretch.tar.xz && \
-  cp picam-1.4.6-binary-stretch/picam ~/picam/
+  https://github.com/iizukanao/picam/releases/download/v1.4.7-dev-4ch/picam-1.4.7-4ch-binary.tar.xz && \
+  tar xvf picam-1.4.7-4ch-binary.tar.xz && \ 
+  rm picam-1.4.7-4ch-binary.tar.xz && \
+  cp picam-1.4.7-4ch-binary/picam ~/picam/
 
 
 ########################################

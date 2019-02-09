@@ -1,0 +1,13 @@
+[Unit]
+Description=Picamera container
+Requires=docker.service
+After=docker.service
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/docker start -a picamera
+ExecStop=/usr/bin/docker stop -t 2 picamera
+
+[Install]
+WantedBy=default.target
+
